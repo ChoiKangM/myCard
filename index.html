@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Practice</title>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <style>
+        .card{
+            margin: auto;
+            width: 300px;
+            height: 500px;
+            border: 1px solid gray;
+            border-radius: 3%;
+            overflow: hidden;
+        }
+        .profile_img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            padding-top: 35px;
+            padding-bottom: 35px;
+        }
+        .name{
+            font-family: 'Nanum Gothic', sans-serif;
+            text-align: center;
+            font-size: 25px;
+            color: gray;
+            margin-top: 10px;
+            margin-left: 20px;
+            margin-right: 20px;
+            border-bottom: 0.5px solid gray;
+            padding-bottom: 10px;
+        }
+        .intro{
+            text-align: center;
+            overflow-y:scroll;
+            height: 220px;
+            padding-right: 25px;
+            padding-left: 25px;
+        }
+        .profile_img_div{
+            margin-bottom: 15px;
+            text-align: center;
+            background-color: yellow;
+        }
+        ::-webkit-scrollbar{
+            width: 15px;
+        }
+        ::-webkit-scrollbar-track {
+            background-color: #B0E2FF;
+        } /* the new scrollbar will have a flat appearance with the set background color */
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #9487E9;
+        } /* this will style the thumb, ignoring the track */
+
+        ::-webkit-scrollbar-button {
+            background-color: #B0E2FF;
+        } /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="profile_img_div">
+            <img src="http://해달프로그래밍.com/img/portfolio/profile.png" alt="" class="profile_img">
+        </div>
+        <div class="name">
+            해달 프로그래밍
+        </div>
+        <div class="intro">OOO회 회장, XXX 준비위원회 준비위원장, △△△ 대표…….
+            세상의 균형을 맞추려는 듯, 많은 사람들이 여유 시간만 되면 이불 안에서 게으름을 피우는 사이, 남들보다 2~3배 움직이며 왕성하게 활동하는 사람이 있다. 그리고 그런 인물의 앞에는 항상 그럴듯한 수식어가 3~4개씩 붙어 다닌다.
+            자 이제 마지막으로 스크롤 바의 모양을 바꾸어 보겠습니다.
+웹킷 브라우저에서 스크롤바를 대상으로 도입된 CSS 가상요소를 이용하면 스크롤바를
+원하는 대로 꾸밀 수 있습니다.
+
+일련의 코드들을 <style> 태그 안에 추가하여 스크롤 바를 변경해봅시다.
+
+다음 코드를 사용해 웹킷이 브라우저에 장착된 스크롤바의 렌더링 기능을 끄고 CSS에서 제공하는 데이터를 사용하게 만들 수 있습니다.
+        </div>
+    </div>
+</body>
+</html>
